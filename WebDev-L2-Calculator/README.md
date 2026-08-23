@@ -4,6 +4,10 @@ CalcPro is a modern, responsive, browser-based calculator developed as part of t
 
 The application performs basic arithmetic operations through a clean and user-friendly interface. It is built entirely using **HTML5, CSS3, and Vanilla JavaScript**.
 
+## 🌐 Live Demo
+
+[View CalcPro Live](https://ashutosh9-pan.github.io/OIBSIP/WebDev-L2-Calculator/)
+
 ## ✨ Features
 
 - Basic arithmetic operations:
