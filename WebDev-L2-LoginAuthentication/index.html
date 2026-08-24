@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="SecureNest - Client-side login authentication system built with HTML, CSS and Vanilla JavaScript."
+    >
+
+    <title>SecureNest | Login Authentication</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="auth-page">
+
+        <!-- Left Panel -->
+        <section class="brand-panel">
+
+            <div class="brand-content">
+
+                <p class="eyebrow">
+                    AUTHENTICATION SYSTEM
+                </p>
+
+                <h1>
+                    Secure<span>Nest</span>
+                </h1>
+
+                <p class="brand-description">
+                    A simple and secure client-side authentication experience
+                    built with HTML, CSS and Vanilla JavaScript.
+                </p>
+
+                <div class="feature-list">
+
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+
+                        <div>
+                            <strong>Secure Registration</strong>
+                            <p>
+                                Password validation and duplicate account checks.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+
+                        <div>
+                            <strong>Protected Dashboard</strong>
+                            <p>
+                                Only authenticated users can access the dashboard.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+
+                        <div>
+                            <strong>Persistent Accounts</strong>
+                            <p>
+                                Account data is stored locally in the browser.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="brand-decoration decoration-one"></div>
+            <div class="brand-decoration decoration-two"></div>
+
+        </section>
+
+
+        <!-- Authentication Panel -->
+        <section class="auth-panel">
+
+            <div class="auth-card">
+
+                <!-- Tabs -->
+                <div class="auth-tabs">
+
+                    <button
+                        type="button"
+                        class="tab-button active"
+                        id="loginTab"
+                    >
+                        Login
+                    </button>
+
+                    <button
+                        type="button"
+                        class="tab-button"
+                        id="registerTab"
+                    >
+                        Register
+                    </button>
+
+                </div>
+
+
+                <!-- Login Form -->
+                <section
+                    class="form-section active"
+                    id="loginSection"
+                >
+
+                    <div class="form-heading">
+
+                        <p class="form-label">
+                            WELCOME BACK
+                        </p>
+
+                        <h2>
+                            Login to your account
+                        </h2>
+
+                        <p>
+                            Enter your credentials to continue.
+                        </p>
+
+                    </div>
+
+
+                    <form id="loginForm" novalidate>
+
+                        <div class="form-group">
+
+                            <label for="loginIdentifier">
+                                Username or Email
+                            </label>
+
+                            <input
+                                type="text"
+                                id="loginIdentifier"
+                                placeholder="Enter username or email"
+                                autocomplete="username"
+                            >
+
+                            <p
+                                class="field-error"
+                                id="loginIdentifierError"
+                            ></p>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="loginPassword">
+                                Password
+                            </label>
+
+                            <div class="password-field">
+
+                                <input
+                                    type="password"
+                                    id="loginPassword"
+                                    placeholder="Enter your password"
+                                    autocomplete="current-password"
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    data-toggle-password="loginPassword"
+                                    aria-label="Show password"
+                                >
+                                    Show
+                                </button>
+
+                            </div>
+
+                            <p
+                                class="field-error"
+                                id="loginPasswordError"
+                            ></p>
+
+                        </div>
+
+
+                        <p
+                            class="form-message"
+                            id="loginMessage"
+                            aria-live="polite"
+                        ></p>
+
+
+                        <button
+                            type="submit"
+                            class="primary-button"
+                        >
+                            Login
+                        </button>
+
+                    </form>
+
+
+                    <p class="switch-text">
+                        Don't have an account?
+
+                        <button
+                            type="button"
+                            class="switch-button"
+                            data-show-form="register"
+                        >
+                            Create one
+                        </button>
+                    </p>
+
+                </section>
+
+
+                <!-- Registration Form -->
+                <section
+                    class="form-section"
+                    id="registerSection"
+                >
+
+                    <div class="form-heading">
+
+                        <p class="form-label">
+                            CREATE ACCOUNT
+                        </p>
+
+                        <h2>
+                            Register securely
+                        </h2>
+
+                        <p>
+                            Create an account to access your protected dashboard.
+                        </p>
+
+                    </div>
+
+
+                    <form id="registerForm" novalidate>
+
+                        <div class="form-group">
+
+                            <label for="registerUsername">
+                                Username
+                            </label>
+
+                            <input
+                                type="text"
+                                id="registerUsername"
+                                placeholder="Choose a username"
+                                maxlength="30"
+                                autocomplete="username"
+                            >
+
+                            <p
+                                class="field-error"
+                                id="registerUsernameError"
+                            ></p>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="registerEmail">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="registerEmail"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                            >
+
+                            <p
+                                class="field-error"
+                                id="registerEmailError"
+                            ></p>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="registerPassword">
+                                Password
+                            </label>
+
+                            <div class="password-field">
+
+                                <input
+                                    type="password"
+                                    id="registerPassword"
+                                    placeholder="Create a password"
+                                    autocomplete="new-password"
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    data-toggle-password="registerPassword"
+                                    aria-label="Show password"
+                                >
+                                    Show
+                                </button>
+
+                            </div>
+
+
+                            <div class="password-rules">
+
+                                <span id="lengthRule">
+                                    ○ At least 8 characters
+                                </span>
+
+                                <span id="numberRule">
+                                    ○ At least 1 number
+                                </span>
+
+                            </div>
+
+                            <p
+                                class="field-error"
+                                id="registerPasswordError"
+                            ></p>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="confirmPassword">
+                                Confirm Password
+                            </label>
+
+                            <div class="password-field">
+
+                                <input
+                                    type="password"
+                                    id="confirmPassword"
+                                    placeholder="Confirm your password"
+                                    autocomplete="new-password"
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    data-toggle-password="confirmPassword"
+                                    aria-label="Show password"
+                                >
+                                    Show
+                                </button>
+
+                            </div>
+
+                            <p
+                                class="field-error"
+                                id="confirmPasswordError"
+                            ></p>
+
+                        </div>
+
+
+                        <p
+                            class="form-message"
+                            id="registerMessage"
+                            aria-live="polite"
+                        ></p>
+
+
+                        <button
+                            type="submit"
+                            class="primary-button"
+                        >
+                            Register
+                        </button>
+
+                    </form>
+
+
+                    <p class="switch-text">
+                        Already have an account?
+
+                        <button
+                            type="button"
+                            class="switch-button"
+                            data-show-form="login"
+                        >
+                            Login
+                        </button>
+                    </p>
+
+                </section>
+
+            </div>
+
+
+            <footer class="auth-footer">
+
+                <p>
+                    Designed & Developed by
+                    <strong>Ashutosh Panwar</strong>
+                </p>
+
+                <p>
+                    Oasis Infobyte • Web Development & Designing Internship
+                </p>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

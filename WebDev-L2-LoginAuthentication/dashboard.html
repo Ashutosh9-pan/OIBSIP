@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Protected dashboard for the SecureNest authentication project."
+    >
+
+    <title>SecureNest | Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <main class="dashboard-shell">
+
+        <header class="dashboard-header">
+
+            <div>
+                <p class="eyebrow">
+                    PROTECTED AREA
+                </p>
+
+                <h1>
+                    Secure<span>Nest</span>
+                </h1>
+            </div>
+
+            <button
+                type="button"
+                class="logout-button"
+                id="logoutBtn"
+            >
+                Logout
+            </button>
+
+        </header>
+
+
+        <section class="welcome-card">
+
+            <div class="welcome-icon">
+                ✓
+            </div>
+
+            <div>
+
+                <p class="dashboard-label">
+                    AUTHENTICATED SESSION
+                </p>
+
+                <h2>
+                    Welcome,
+                    <span id="dashboardUsername">
+                        User
+                    </span>
+                </h2>
+
+                <p>
+                    You have successfully logged in and gained access
+                    to this protected dashboard.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-grid">
+
+            <article class="dashboard-card">
+
+                <div class="card-icon">
+                    👤
+                </div>
+
+                <div>
+                    <span class="card-label">
+                        Username
+                    </span>
+
+                    <strong id="profileUsername">
+                        --
+                    </strong>
+                </div>
+
+            </article>
+
+
+            <article class="dashboard-card">
+
+                <div class="card-icon">
+                    ✉
+                </div>
+
+                <div>
+                    <span class="card-label">
+                        Email
+                    </span>
+
+                    <strong id="profileEmail">
+                        --
+                    </strong>
+                </div>
+
+            </article>
+
+
+            <article class="dashboard-card">
+
+                <div class="card-icon">
+                    🔐
+                </div>
+
+                <div>
+                    <span class="card-label">
+                        Account Status
+                    </span>
+
+                    <strong>
+                        Authenticated
+                    </strong>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <section class="security-card">
+
+            <div>
+
+                <p class="dashboard-label">
+                    ACCESS CONTROL
+                </p>
+
+                <h2>
+                    Protected Dashboard
+                </h2>
+
+                <p>
+                    This page can only be viewed while an authenticated
+                    session is active. If the session is missing or invalid,
+                    the application redirects the user back to the login page.
+                </p>
+
+            </div>
+
+            <div class="security-badge">
+                <span>✓</span>
+                Session Active
+            </div>
+
+        </section>
+
+
+        <footer class="dashboard-footer">
+
+            <p>
+                Designed & Developed by
+                <strong>Ashutosh Panwar</strong>
+            </p>
+
+            <p>
+                Oasis Infobyte • Web Development & Designing Internship
+            </p>
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
