@@ -4,6 +4,10 @@ A visually engaging and responsive tribute page dedicated to **Srinivasa Ramanuj
 
 This project was developed as part of the **Oasis Infobyte Web Development & Designing Internship – Level 2, Task 2** using only **HTML5 and CSS3**.
 
+## 🌐 Live Demo
+
+[View Srinivasa Ramanujan Tribute Page Live](https://ashutosh9-pan.github.io/OIBSIP/WebDev-L2-TributePage/)
+
 ## ✨ Features
 
 - Premium mathematics-inspired tribute page design
