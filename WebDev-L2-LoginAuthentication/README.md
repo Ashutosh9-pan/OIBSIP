@@ -4,6 +4,10 @@ SecureNest is a responsive client-side authentication system developed as part o
 
 The application provides user registration, login validation, persistent account storage, and access to a protected dashboard using **HTML5, CSS3, Vanilla JavaScript, and localStorage**.
 
+## 🌐 Live Demo
+
+[View SecureNest Live](https://ashutosh9-pan.github.io/OIBSIP/WebDev-L2-LoginAuthentication/)
+
 ## ✨ Features
 
 - User registration with username, email, and password
